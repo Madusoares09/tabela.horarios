@@ -7,6 +7,12 @@ body {
 h1 {
     color: #333;
     text-align: center;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    color: #6c757d;
     margin-bottom: 30px;
 }
 
@@ -20,9 +26,10 @@ h1 {
 #quadro-horarios th, 
 #quadro-horarios td {
     border: 1px solid #ddd;
-    padding: 12px 8px; /* Mais espaço vertical */
+    padding: 12px 8px; 
     text-align: center;
-    min-width: 100px; /* Garante largura mínima para visualização em desktop */
+    min-width: 100px; 
+    transition: background-color 0.3s ease;
 }
 
 #quadro-horarios th {
@@ -44,10 +51,16 @@ h1 {
     background-color: #d4edda; /* Verde claro para aulas */
     font-weight: 500;
     color: #155724;
+    cursor: pointer;
+}
+
+/* Efeito hover para aulas */
+#quadro-horarios td:not(:empty):hover {
+    background-color: #c3e6cb;
 }
 
 #quadro-horarios td small {
-    display: block; /* Garante que a turma fique em uma nova linha */
+    display: block; 
     font-size: 0.9em;
     color: #387040;
     margin-top: 2px;
